@@ -1,15 +1,12 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+ <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.epinorodriguez.jessicatheme</id>
     <name>jessica-theme</name>
     <vendor>epinorodriguez</vendor>
 
-    <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <!-- <depends>com.intellij.modules.platform</depends> -->
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.epinorodriguez.jessicatheme.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <postStartupActivity implementation="com.github.epinorodriguez.jessicatheme.startup.MyProjectActivity" />
+        <themeProvider id="com.github.epinorodriguez.jessicatheme" path="/theme/jessica-theme.theme.json" />
     </extensions>
 </idea-plugin>
